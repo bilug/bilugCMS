@@ -1,0 +1,153 @@
+<? /* license
+
+BilugCMS (http://www.bilug.it) - Content Management System for dynamic web sites
+Copyright (C) 2005-2008  Federico Villa and Alessio Loro Piana
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+For reference, contact bilugcms@vilnet.it
+
+
+license */ ?>
+
+<script type="text/javascript" src="<?=_URLSITO?>/js/jquery.easing.js"></script>
+<script type="text/javascript" src="<?=_URLSITO?>/js/jqueryui.js"></script>
+
+<script type="text/javascript" src="<?=_URLSITO?>/js/jquery.cluetip.js" ></script>
+<script type="text/javascript" src="<?=_URLSITO?>/js/jquery.lightbox.min.js" ></script>
+<script type="text/javascript" src="<?=_URLSITO?>/js/coda-slider.1.1.1.js"></script>
+
+<script type="text/javascript" src="<?=_URLSITO?>/js/jquery.newsticker.pack.js"></script>
+<script type="text/javascript" src="<?=_URLSITO?>/js/jquery.hoveraccordion.js"></script>
+<script type="text/javascript" src="<?=_URLSITO?>/js/funzioni.js"></script>
+
+<script type="text/javascript" src="<?=_URLSITO?>/ckeditor/ckeditor.js"></script>
+
+
+<script type="text/javascript">
+
+<?php if ( _CLUETIP ) { ?>
+	// Abilito il Cluetip solo se la variabile è attiva
+	$(document).ready(function() {
+	  $('a[title]').cluetip({splitTitle: '|', dropShadow: true,cluetipClass: 'sito',arrows: true, showTitle: false});
+	});
+<?php } ?>
+
+$.get("nomenu.php",{"stato":"0"},function(data){		
+	if (data == 1) $("div.nascondi").css("display","none");
+});
+
+$(document).ready(
+	function()
+	{		
+		$("button.nascondi").click(function () {		
+		$.get("nomenu.php",{"stato":"1"},function(data){		
+		if (data == 1) {
+      	$("div.nascondi").css('height','1').hide();
+      	$("button.nascondi").text("Srotola");     	
+      }else {
+      	$("div.nascondi").css('height','100%').show();      	
+      	$("button.nascondi").text("Arrotola");
+      }});
+    });				
+	}
+);
+
+$(document).ready(
+	function()
+	{
+		$("#news").css("display","block");
+		$("#news").newsTicker();		
+	}
+);
+
+$(document).ready(
+	function()
+	{
+		$("#newslat").css("display","block");
+		$("#newslat").newsTicker();		
+	}
+);
+
+$(document).ready(
+	function()
+	{
+		$("#eventlat").css("display","block");
+		$("#eventlat").newsTicker();		
+	}
+);
+
+// Jquery per i menu accordion se attivati
+// Riferimento: jquery.accordion.js
+$(document).ready(function(){ 
+   $('.accordion').hoverAccordion({ 
+  	  keepHeight: true, 
+  	  speed: 'fast' 
+   }); 
+});
+
+
+
+// Effetto sulle immagini
+$(document).ready(function(){ 
+	// Opzioni per la lightbox
+	var options = {
+		imageLoading: '<?=_URLSITO?>/img/lightbox/lightbox-ico-loading.gif',
+		imageBtnClose: '<?=_URLSITO?>/img/lightbox/lightbox-btn-close.gif',
+		imageBtnPrev: '<?=_URLSITO?>/img/lightbox/lightbox-btn-prev.gif',
+		imageBtnNext: '<?=_URLSITO?>/img/lightbox/lightbox-btn-next.gif',
+		txtImage: 'Immagine',
+		txtOf: 'di'
+	}
+	
+	// Effetto lightbox sulle gallerie
+	$('.lightbox-gallery a').lightBox(options);	
+
+	
+	var options = {
+		imageLoading: '<?=_URLSITO?>/img/lightbox/lightbox-ico-loading.gif',
+		imageBtnClose: '<?=_URLSITO?>/img/lightbox/lightbox-btn-close.gif',
+		imageBtnPrev: '<?=_URLSITO?>/img/lightbox/lightbox-btn-prev.gif',
+		imageBtnNext: '<?=_URLSITO?>/img/lightbox/lightbox-btn-next.gif',
+		txtImage: 'Immagine',
+		txtOf: 'di'
+	}
+	$('a.lightbox').lightBox(options);
+	
+	
+	// Al completamento di ajax, ricarico i pezzi di script per il funzionamento dei social in modalita asincrona
+	$(document).ajaxComplete(function () {
+		try {
+			FB.XFBML.parse();
+		} catch (ex) {}
+	});	
+});
+
+
+function genera_ajax( pag, key, div ) {
+	$.ajax({
+	type: "GET",
+	url: pag,
+	data: key,
+	success: function(response){
+		$(div).html(response);
+	}
+	});
+}
+
+</script>
+
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->

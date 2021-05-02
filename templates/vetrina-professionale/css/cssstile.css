@@ -1,0 +1,248 @@
+/* license
+
+BilugCMS (http://www.bilug.it) - Content Management System for dynamic web sites
+Copyright (C) 2005-2008  Federico Villa and Alessio Loro Piana
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+For reference, contact bilugcms@vilnet.it
+
+
+license */
+
+/* Configurazioni di Base Comuni*/
+
+body {
+	background: #5A7080 url('../img/bg.jpg') center top repeat-x fixed;
+}
+
+
+h1, h2, h3, h4, h5 { font-weight: normal; }
+h1 {}
+h2 { color: #728A9C; }
+h3 {}
+
+
+input[type="submit"], input[type="button"], input[type="reset"],
+button, .btn {
+	border-radius: 8px;
+	box-shadow: 1px 1px 1px black;
+	background: #DDD;
+	color: #000;
+	padding: 2px 5px;
+	font-size: 12px;
+	border: 1px solid #444;
+}
+input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover,
+button:hover, .btn:hover {
+	box-shadow: -1px -1px 1px black;
+}
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(236, 176, 82, 0.8);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(236, 176, 82, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(236, 176, 82, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(236, 176, 82, 0.6);
+}
+
+
+.blocco{}
+.blocco h3 { }
+.blocco .modulo {  }
+
+
+.content {}
+
+.contenuto { 
+	width: auto; 
+	margin: 15px auto 0; 
+	background: url('../img/content.png') center top repeat-y;
+}
+
+.centrale{
+	padding: 20px 0;
+	background: #fff;
+	width: 990px;
+	margin: 0 auto;
+}
+
+
+/* Testa */
+
+.testa { background: url(../img/contenuto.png) center top no-repeat; width: auto; margin: 0 auto; }
+.testa .logo { width: 990px; margin: 0 auto; padding-top: 15px;}
+
+
+/* menù a tendina */ 
+
+.blocco-menu-tendina {  
+	width: 990px;
+	position: relative;
+	margin: 5px auto;
+}
+
+.blocco-menu-tendina ul.menu { 
+	width: 990px;
+	position: relative;
+	margin-top: 15px;
+	background: #728A9C;
+	height: 40px;
+	text-align: center;
+	
+}
+.blocco-menu-tendina ul.menu li {position:r elative; float: left; width: 150px; }
+.blocco-menu-tendina ul.menu .menulink {
+	border-right: 0; 
+	padding: 0; 
+	font-weight: normal; 
+	font-size: 14px; 
+	background: none;
+	display: block;
+	color: #fff;
+}
+.blocco-menu-tendina ul.menu .menulink:hover, 
+.blocco-menu-tendina ul.menu .menuhover, 
+.blocco-menu-tendina ul.menu li.link_uri .menulink {
+	background:none; 
+	text-decoration: none; 
+	color: #D6DEE1;
+}
+
+
+/* laterale */
+
+.laterale { display: none; }
+.laterale .blocco { background: #888; margin-bottom: 10px; padding: 2px; }
+
+
+
+/* Corpo */
+
+.corpo {}
+.corpo p{ text-align: justify; }
+
+
+
+
+/* Per il modulo della newsbox */
+.blocco-newsbox {
+	margin: 0; 
+	float: left; 
+	width: 330px; 
+	background: none; 
+	height: 350px; 
+	border: 0; 
+	font-size: 13px;
+	border-top: 1px solid #CCC;
+	margin-top: 20px;
+}
+.blocco-newsbox .immagine {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.blocco-newsbox .immagine img {
+	text-align: center;
+	width: 140px;
+	height: auto;
+}
+
+.blocco-newsbox h3 { text-align: center; color: #728A9C; }
+.blocco-newsbox .testo { font-size: 10px; padding: 10px; text-align: center; }
+.blocco-newsbox .testo a { color: #AE0000; border: 0; }
+.blocco-newsbox .testo a:hover { text-decoration: none; }
+
+
+
+.elenco a ,.elenco a:visited, .elenco a:link{
+	float: left;
+	height: 20px;
+	width: 620px;	
+	border-bottom: 1px dashed #000080;
+	padding-bottom:3px;		
+}
+
+.elenco a:hover{ background:#dedee0; color:#333; }	
+.elenco a,.elenco a:visited, .elenco a:link {	padding-top: 10px; text-decoration: none; }
+ 
+
+.elencoimg , .elencoimg a:hover, .elencoimg a:visited, .elencoimg a:link {
+	float: right;
+	height: 30px;	
+	width: 40px;
+	background-color: #fff;
+	/*background-color: #dedee0;*/
+}
+
+
+
+/* Piede */
+
+.piede{
+	margin-top: 5px;
+	width: 100%;
+	text-align: center;	
+}
+.piede .piedipagina { padding: 5px 0; color: #0000FF; }
+.piede .bottoni { padding-top: 5px; background: url(../img/bottoni.png) center top repeat-y; width:1200px; margin:0 auto; }
+
+.piede .extra_piede { /* classe dentro il modulo piè di pagina */
+	margin-top: 10px;
+	background: #fff;
+	padding: 10px;
+	border-radius: 7px;
+	border: 2px solid #888;
+}
+
+
+
+/* sitemap */
+
+.blocco-sitemap { background: url(../img/sitemap.png) center top repeat-y; padding: 10px 5px; margin:0; border: 0; }
+.blocco-sitemap > h3 { display: none; }
+.blocco-sitemap .modulo { 
+	text-align: left;
+	width: 1200px;
+	margin: 0 auto;
+	padding-left: 40px;
+}
+.blocco-sitemap .modulo .modulo-princ-sitemap { float: left; width: 250px; }
+.blocco-sitemap .modulo .modulo-sitemap { padding: 15px 10px; height: 150px; border-left: 1px solid #ccc; border-right: 1px solid #333; }
+.blocco-sitemap .modulo .modulo-first { border-left: 0; }
+.blocco-sitemap .modulo .modulo-last { border-right: 0; }
+.blocco-sitemap .modulo .modulo-sitemap h3 { margin-bottom: 5px; text-align: left; font-size: 15px; color:#728A9C; }
+.blocco-sitemap .modulo .modulo-sitemap > div { padding-left: 8px; color:#fff; }
+.blocco-sitemap .modulo .modulo-sitemap a { padding: 3px 0; padding-left: 8px; display: block; text-align: left; color:#D6DEE1; }
+
+
+
+
+
+
+

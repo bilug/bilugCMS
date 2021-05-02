@@ -1,0 +1,14 @@
+User-Agent: *
+Allow: /
+Disallow: /areariservata/
+Disallow: /ckeditor/
+Disallow: /css/
+Disallow: /custom/
+Disallow: /include/
+Disallow: /js/
+Disallow: /kcfinder/
+Disallow: /phpmysqlautobackup/
+Disallow: /templates/
+Disallow: /utility/
+
+

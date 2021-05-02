@@ -1,0 +1,382 @@
+/* license
+
+BilugCMS (http://www.bilug.it) - Content Management System for dynamic web sites
+Copyright (C) 2005-2008  Federico Villa and Alessio Loro Piana
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+For reference, contact bilugcms@vilnet.it
+
+
+license */
+
+/* Configurazioni di Base Comuni*/
+
+body { 
+	background-color: #fff; 
+	font-family: Arial, Helvetica, Verdana;
+	font-size: 12px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+}
+
+h1, h1 a {
+	padding: 5px 10px;
+	background: #3A3B3D;	
+	color: #fff !important;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+h2 {
+	font-size: 17px;
+}
+
+
+input[type="submit"], input[type="button"], input[type="reset"],
+button, a.btn {
+	font-size: 13px;
+	color: white;
+	font-weight: 700;
+	background: #404145;
+	padding: 5px 8px;
+	cursor: pointer;
+	text-decoration: none;
+	box-shadow: none;
+	border: 0;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active, 
+input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active, 
+input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:active, 
+button:hover, button:focus, button:active, 
+a.btn:hover, a.btn:focus, a.btn:active {	
+	background: #000;
+	box-shadow: none;
+	border: 0;
+}
+
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+button:active,
+a.btn:active
+{
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+}
+
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+button:focus,
+a.btn:focus {
+}
+
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	width: 230px;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(58, 59, 61, 0.8);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(58, 59, 61, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(58, 59, 61, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(58, 59, 61, 0.6);
+}
+
+
+
+
+.contenuto { 
+	width: 990px; 
+	margin: 15px auto 30px;
+}
+
+.centrale{ 
+	padding: 10px 0;
+	background: #fff;
+	border-right: 1px solid;
+	border-left: 1px solid;
+	border-color: #ccc;
+}
+
+
+
+
+/* testa */
+
+.testa {  }
+.testa .blocco { margin-bottom: 0; }
+
+/* Menù a tendina */
+
+.testa .blocco-menu-tendina { float: none; }
+
+.blocco-menu-tendina ul.menu { 
+	width: auto;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	background: #404143;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.blocco-menu-tendina ul.menu > li { position: relative; float: left; padding: 0 30px; margin: 0; }
+.blocco-menu-tendina ul.menu > li.last_link { padding-right: 0; margin-right: 0; }
+.blocco-menu-tendina ul.menu > li.first_link { padding-left: 30px; margin-left: 0; }
+
+.blocco-menu-tendina ul.menu .menulink { 
+	color: #BFC3C8; 
+	display: inline; 
+	font-size: 14px; 
+	border: 0;
+	padding: 0;
+}
+
+.blocco-menu-tendina ul.menu .menulink:hover, 
+.blocco-menu-tendina ul.menu .menuhover, 
+.blocco-menu-tendina ul.menu li.link_uri .menulink { 
+	color: #fff; 
+	text-decoration: none; 
+}
+
+
+
+/* Laterale */
+
+.laterale {}
+.destra { display: none; }
+.sinistra { width: 280px; }
+.sinistra .content-interno { padding-left: 10px; }
+
+
+/* Corpo */
+
+.corpo { width: 700px; float: right; }
+.corpo .content-interno { padding: 0 10px; }
+.corpo .testo {  }
+
+/* piede */
+
+.piede {}
+.piede .piedipagina {
+	width: auto; 
+	height: auto; 
+	background: #858789; 
+	margin: 0; 
+	padding: 10px 0; 
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color: #fff;
+}
+
+
+/* logo */
+
+.logo { 
+	float: left; 
+	width: 400px; 
+	height: auto;
+}
+
+/* blocco bandierine */
+
+.blocco-bandierine-multilingua { float: right; width: 400px; margin-top: 15px; }
+
+/* blocco accessibilità */
+
+.blocco-accessibilita { text-align: right; }
+
+
+/* blocco ecommerce */
+
+.blocco-ecommerce-carrello {}
+.blocco-ecommerce-carrello h3 {}
+.blocco-ecommerce-carrello h3 a { 
+} .blocco-ecommerce-carrello h3 a:hover { color: #888; text-decoration: none; } 
+.blocco-ecommerce-carrello h3 a img { margin-top: 9px; } 
+
+.blocco-ecommerce-cerca {}
+.blocco-ecommerce-categorie {}
+.blocco-ecommerce-categorie .modulo ul {}
+.blocco-ecommerce-categorie .modulo ul li { }
+.blocco-ecommerce-categorie .modulo ul li { border-bottom: 1px solid #ddd; }
+.blocco-ecommerce-categorie .modulo ul li a { border: 0; font-weight: normal; font-size: 13px; }
+.blocco-ecommerce-categorie .modulo ul li a {
+	font-size: 13px;
+	line-height: 18px;
+	color: #797D80;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px;
+	padding-left: 20px;
+	background: url( ../img/marker_li.gif) left center no-repeat #fff;
+} .blocco-ecommerce-categorie .modulo ul li a small { font-style: italic; color: #aaa; }
+.blocco-ecommerce-categorie .modulo ul li a:hover { background: url( ../img/marker_li.gif) 10px center no-repeat #e3e5e7; color: #000; }
+.blocco-ecommerce-categorie .modulo ul li ul { padding-left: 20px; margin-bottom: 20px; }
+
+
+
+.corpo p{ 	}
+
+
+
+
+.corpo ul.argo { list-style: none; }
+
+
+
+.elenco a ,.elenco a:visited, .elenco a:link{
+	float: left;
+	height: 20px;
+	width: 620px;	
+	border-bottom: 1px dashed #000080;
+	padding-bottom:3px;		
+}
+
+.elenco a:hover{ background:#dedee0; color:#333; }	
+.elenco a,.elenco a:visited, .elenco a:link {	padding-top: 10px; text-decoration: none; }
+ 
+
+.elencoimg , .elencoimg a:hover, .elencoimg a:visited, .elencoimg a:link {
+	float: right;
+	height: 30px;	
+	width: 40px;
+	background-color: #fff;
+	/*background-color: #dedee0;*/
+}
+
+
+
+
+/* Menù a tendina */
+
+.blocco-menu-tendina { clear: both; float: left; font-size: 15px; }
+
+.blocco-menu-tendina ul.menu > li > a { border-right: 1px solid #ccc; padding: 5px 20px; }
+.blocco-menu-tendina ul.menu > li > a:hover {}
+
+
+
+
+/* Ecommerce corpo */
+
+.ecommerce-dettaglio {}
+.ecommerce-dettaglio center {}
+.ecommerce-dettaglio h3 {}
+.ecommerce-dettaglio h3  center {}
+.ecommerce-dettaglio .dettaglio-descrizione {}
+.ecommerce-dettaglio .dettaglio-descrizione h3 { color: #3A3B3D; text-align: left; font-size: 16px; margin: 15px 0 10px; }
+.ecommerce-dettaglio .dettaglio-descrizione .descrizione-foto { margin: 10px 0; }
+.ecommerce-dettaglio .dettaglio-descrizione .descrizione-testo { line-height: 18px; }
+.ecommerce-dettaglio .dettaglio { float: right; width: 390px; }
+.ecommerce-dettaglio .dettaglio .dettaglio-blocco-1 { margin-bottom: 20px; }
+.ecommerce-dettaglio .dettaglio .dettaglio-blocco-2 { float: left; width: 195px; height: 100px; }
+.ecommerce-dettaglio .dettaglio h3 { background: #3A3B3D; padding: 3px 0; color: #fff; font-size: 14px; margin-bottom: 15px; text-align: center; }
+.ecommerce-dettaglio .dettaglio h4 { font-weight: bold; margin-bottom: 8px; font-size: 14px; text-align: center; }
+.ecommerce-dettaglio .dettaglio .dettaglio-testo { text-align: center; font-size: 12px; }
+.ecommerce-dettaglio .img_principale { float: left; width: 275px; text-align: center; }
+.ecommerce-dettaglio .img_principale a { text-align: center; }
+.ecommerce-dettaglio .img_principale a img{ width: 250px; height: auto; }
+.ecommerce-dettaglio .ecomico{ width: 60px; height: auto; }
+.ecommerce-dettaglio .ecosec{ width: 150px; height: auto; }
+
+.ecommerce-dettaglio-carrello {}
+.ecommerce-dettaglio-carrello .contenitore { margin-top: 20px; }
+.ecommerce-dettaglio-carrello h3 { background: #3A3B3D; padding: 3px 0; color: #fff; font-size: 14px; margin-bottom: 10px; }
+
+.contenitore-ecommerce { padding: 0; margin: 0; border: 0; font-size: 14px; }
+.contenitore-ecommerce .celle-ecommerce { padding: 10px 0; border: 1px solid #ccc; margin-bottom: 15px; }
+.contenitore-ecommerce .celle-intestazioni { }
+.contenitore-ecommerce .celle-articoli {}
+.contenitore-ecommerce .celle-articoli:hover { border-color: #888; }
+.contenitore-ecommerce .celle-ecommerce .cella { float: left; width: 165px; text-align: center; }
+.contenitore-ecommerce .celle-ecommerce .cella h3,
+.contenitore-ecommerce .celle-ecommerce .cella h4 { text-align: left; margin-bottom: 5px; height: auto; line-height: auto; }
+.contenitore-ecommerce .celle-ecommerce .cella h4 { font-size: 13px; color: #888; }
+.contenitore-ecommerce .celle-ecommerce .cella h3 a { font-size: 15px; color: #000; }
+.contenitore-ecommerce .celle-ecommerce .cella h3 a:hover { color: #888; text-decoration: none; }
+.contenitore-ecommerce .celle-intestazioni .cella { font-weight: bold; text-align: center; }
+.contenitore-ecommerce .celle-articoli .cella { margin-top: 10px; }
+.contenitore-ecommerce .ecomsec{ width: 120px; height: auto; }
+.contenitore-ecommerce .ecomico{ width: 40px; height: auto; }
+.contenitore-ecommerce .articolo-ecommerce{  }
+
+.contenitore-ecommerce #sel_produttore { float: left; width: 400px; margin-top: 20px; }
+.contenitore-ecommerce #sel_produttore select { width: 300px; }
+.contenitore-ecommerce .carrello { float: right; width: 200px; }
+.contenitore-ecommerce .carrelloTop { float: right; width: 157px; margin-top: 15px; }
+.contenitore-ecommerce .carrelloBottom { float: right; width: 157px; margin-top: -15px; }
+
+.contenitore-ecommerce .ecommerce-navigazione { padding: 20px 0 10px; }
+.contenitore-ecommerce .ecommerce-navigazione .numero-articoli { text-align: left; }
+.contenitore-ecommerce .ecommerce-navigazione .numero-pagina { margin: 20px 0 10px; }
+.contenitore-ecommerce .ecommerce-navigazione .numero-pagina a { margin-right: 10px; font-size: 14px; font-style: italic; color: #888; }
+.contenitore-ecommerce .ecommerce-navigazione .numero-pagina a:hover { color: #000; text-decoration: underline; }
+.contenitore-ecommerce .ecommerce-navigazione .numero-pagina .precedente { float: left; }
+.contenitore-ecommerce .ecommerce-navigazione .numero-pagina .successivo { float: right; }
+
+.ecommerce-catalogo  { text-align: center; margin-top: 10px; }
+.ecommerce-catalogo .cella-articolo  { text-align: left; }
+.ecommerce-catalogo .cella-articolo  div { padding: 10px; }
+.ecommerce-catalogo .cella-foto  { float: left; width: 150px; }
+.ecommerce-catalogo .cella-foto  img { width: auto; max-width: 100%; height: auto; }
+.ecommerce-catalogo .cella-descrizione  { float: right; width: 450px; }
+.ecommerce-catalogo ul  { padding-left: 30px; }
+.dettaglio ul  { padding-left: 50px; }
+.ecommerce-catalogo  h3 { text-align: left; font-size: 18px; height: auto; margin-bottom: 5px; }
+.ecommerce-catalogo  h4 { text-align: left; font-size: 15px; height: auto; color: #888; margin-bottom: 10px; }
+.ecommerce-catalogo  h5 { text-align: left; }
+
+
+
+
+
+

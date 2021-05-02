@@ -1,0 +1,198 @@
+/**
+
+	Style Jquery Coda-Slider 
+
+*/
+
+
+
+
+
+/* I've used a hard CSS reset above, but you should consider a more sophisticated reset, such as this one: http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
+
+.corpo #inner-body {
+    color: #000000;
+    margin: auto;
+    text-align: center;
+    width: auto;
+    height: auto;
+    overflow:hidden;
+    border: 3px solid #888;
+    border-radius: 5px;
+    background: none repeat scroll 0 0 #ccc;
+}
+.corpo #inner-body h2 {
+    font-size: 20px;
+    margin: 15px 0 35px;
+    text-align: left;
+}
+.corpo #inner-body .panel h2 {
+    font-size: 18px;
+    margin: 0 0 30px;
+}
+.corpo #inner-body p, .corpo #inner-body ul {
+    clear: both;
+    display: block;
+    margin: 0 0;
+    text-align: left;
+}
+.corpo #inner-body p, .corpo #inner-body ul, .corpo #inner-body ol {
+    
+}
+.corpo #inner-body .sinistro { float: left; width: 240px; text-align: center; }
+.corpo #inner-body .sinistro img { width: 200px; height: auto; }
+.corpo #inner-body .destro { float: right; width: 330px; overflow:hidden; }
+.corpo #inner-body .destro .leggi-tutto-vetrina { margin-top: 30px; text-align: left; }
+.corpo #inner-body p a, .corpo #inner-body li a {
+    color: #000080;
+    text-decoration: none;
+	font-size: 15px;
+}
+.corpo #inner-body p a:hover, .corpo #inner-body li a:hover {
+    text-decoration: underline;
+}
+.corpo #inner-body p.intro {
+    padding: 20px 0 0;
+    text-align: center;
+    width: 100%;
+}
+.corpo #inner-body ol {
+    border-bottom: 1px solid #CCCCCC;
+    list-style: decimal outside none;
+    margin-bottom: 30px;
+    padding: 0 0 25px 30px;
+    text-align: left;
+}
+.corpo #inner-body hr {
+    background-color: #FFFFFF;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px 0 0;
+    color: #FFFFFF;
+    margin: 55px 0;
+}
+.panel h2.title {
+    margin-bottom: 10px;
+}
+noscript div {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border: 1px solid #990000;
+    margin: 20px 0;
+    padding: 15px;
+}
+.coda-slider-wrapper {
+    text-align: left;
+}
+#coda-nav-left-5 {
+    margin: 0 1px 0 135px;
+}
+#coda-nav-left-5, #coda-nav-5, #coda-nav-right-5 {
+    float: left;
+}
+#coda-nav-5 ul {
+    margin: 0 !important;
+}
+#coda-nav-left-5 a, #coda-nav-right-5 a {
+    padding: 4px;
+    width: 20px;
+}
+#coda-slider-5 {
+    clear: both;
+}
+#coda-slider-9, #coda-slider-9 .panel {
+    width: 430px;
+}
+#coda-slider-9 h2.title {
+    display: none;
+}
+.coda-slider-wrapper {
+    padding: 0;
+}
+.coda-slider {
+	min-height: 350px !important;
+}
+.coda-slider-no-js .coda-slider {
+    height: 200px;
+    overflow: auto !important;
+    padding-right: 20px;
+}
+.coda-slider, .coda-slider .panel {
+    width: 664px;
+}
+.coda-slider-wrapper.arrows .coda-slider, .coda-slider-wrapper.arrows .coda-slider .panel {
+    width: 664px;
+}
+.coda-slider-wrapper.arrows .coda-slider {
+    margin: 0;
+}
+.coda-nav-left a, .coda-nav-right a {
+    color: #333;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+.corpo #inner-body .coda-nav ul li a.current {
+    background: none repeat scroll 0 0 #3399CC;
+}
+.coda-slider .panel-wrapper {
+    padding: 20px 40px;
+}
+.coda-slider p.loading {
+    padding: 20px;
+    text-align: center;
+}
+.corpo #inner-body .coda-nav ul {
+    clear: both;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+.corpo #inner-body .coda-nav ul li {
+    display: inline;
+}
+.corpo #inner-body .coda-nav ul li a {
+    background: none repeat scroll 0 0 #000000;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    margin-right: 1px;
+    padding: 3px 6px;
+    text-decoration: none;
+}
+.coda-slider-wrapper {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+	min-height: 350px;
+}
+.coda-slider {
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.coda-slider .panel {
+    display: block;
+    float: left;
+}
+.coda-slider .panel-container {
+    position: relative;
+    z-index: 0;
+}
+.coda-nav-left, .coda-nav-right {
+    position: absolute;
+    top: 122px;
+    z-index: 100;
+}
+.coda-nav-left {
+    left:5px;
+}
+.coda-nav-right {
+    right:5px;
+}
+.coda-nav-left a, .coda-nav-right a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}

@@ -1,0 +1,122 @@
+<? /* license
+
+BilugCMS (http://www.bilug.it) - Content Management System for dynamic web sites
+Copyright (C) 2005-2008  Federico Villa and Alessio Loro Piana
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+For reference, contact bilugcms@vilnet.it
+
+
+license */ ?>
+<script type="text/javascript" src="../js/jquery.js"></script> 
+<script type="text/javascript" src="../js/jqueryui.js"></script> 
+
+<script type="text/javascript" src="../js/jquery.shadow.js"></script>
+<script type="text/javascript" src="../js/jquery.ifixpng.js"></script>
+
+<script type="text/javascript" src="../js/jquery.fancyzoom-min.js"></script>
+<script type="text/javascript" src="../js/jquery.newsticker.pack.js"></script>
+<script type="text/javascript" src="../js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="../js/jquery.MetaData.js"></script>
+<script type="text/javascript" src="../js/jquery.MultiFile.pack.js"></script>
+<script type="text/javascript" src="../js/jquery.hoverIntent.js" ></script>  <!--  optional -->
+<script type="text/javascript" src="../js/jquery.cluetip.js" ></script>
+<!--script type="text/javascript" src="../js/jquery.lazyload.mini.js" ></script-->
+<script type="text/javascript" src="../js/coda-slider.1.1.1.js"></script>
+
+<script type="text/javascript" src="../js/jquery.easing.js"></script>
+<script type="text/javascript" src="../js/jquery.accordion.js"></script>
+<script type="text/javascript" src="../js/tenda.js"></script>
+
+
+<script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
+
+
+<script type="text/javascript">
+$(function() {
+	
+	//Set the default directory to find the images needed
+	//by the plugin (closebtn.png, blank.gif, loading images ....)
+	$.fn.fancyzoom.defaultsOptions.imgDir='../img/'; //very important must finish with a /
+
+	// Select all links in object with gallery ID using the defaults options
+	$('a').not('a.del').fancyzoom({Speed:800,showoverlay:true,overlay:6/10});
+	
+	
+	// Per il plugin del lazyload
+	//$("img").not('img.piedelogo').not('img.lucchetto').not('form.paypalform').not('#lista img').lazyload({ placeholder : "../img/blank.gif", effect : "fadeIn"});
+});
+/*
+$(document).ready(function() {
+  $('a[title]').cluetip({splitTitle: '|', dropShadow: true,cluetipClass: 'sito',arrows: true, showTitle: false});
+});
+*/
+$.get("nomenu.php",{"stato":"0"},function(data){		
+						if (data == 1) {
+      					$("div.nascondi").css("display","none");
+}});
+
+$(document).ready(
+	function()
+	{		
+		$("button.nascondi").click(function () {		
+		$.get("nomenu.php",{"stato":"1"},function(data){		
+		if (data == 1) {
+      	$("div.nascondi").css('height','1').hide();
+      	$("button.nascondi").text("Srotola");     	
+      }else {
+      	$("div.nascondi").css('height','100%').show();      	
+      	$("button.nascondi").text("Arrotola");
+      }});
+    });				
+	}
+);
+$(document).ready(
+	function()
+	{
+		$("#news").css("display","block");
+		$("#news").newsTicker();		
+	}
+);
+$(document).ready(
+	function()
+	{
+		$("#newslat").css("display","block");
+		$("#newslat").newsTicker();		
+	}
+);
+$(document).ready(
+	function()
+	{
+		$("#eventlat").css("display","block");
+		$("#eventlat").newsTicker();		
+	}
+);
+
+
+
+function genera_ajax( pag, key, div ) {
+	$.ajax({
+	type: "GET",
+	url: pag,
+	data: key,
+	success: function(response){
+		$(div).html(response);
+	}
+	});
+}
+
+
+
+</script>

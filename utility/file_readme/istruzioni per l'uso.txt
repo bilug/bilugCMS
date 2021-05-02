@@ -1,0 +1,87 @@
+/***************************/
+/***************************/
+
+	ISTRUZIONI PER L'USO
+
+/***************************/
+/***************************/
+/***************************/
+
+
+
+Come usare al meglio il BilugCMS
+
+CSS
+
+- Il file del CSS principale si trova in utility/cssstile.css
+- Per cambiare il CSS del cluetipe, andare su utility/jquery.cluetip.css
+- Se qualche pezzo di CSS non viene interpretato correttamente dai IE, utilizzare utility/ie6.css e utility/iehack.css
+ 
+ 
+JAVASCRIPT
+
+- Per Togliere il clutipe, andare su custom/script.html ed eliminare
+	
+	<script type="text/javascript" src="../js/jquery.cluetip.js" ></script>
+	
+
+LOGO
+
+- Per cambiare il logo della pagina, andare sul file custom/logo.html. Tutto l'HTML che viene inserito in quella pagina, verrà visualizzato solo 
+  Dove si trova il logo
+  
+
+  
+  
+AMMINISTRAZIONE
+
+- Per entrare nell'area amministrativa, scrivi: {NOMESITO}/bilug-admin
+- Per inserire delle nuove pagine, andare su Gestione Pagine Statiche
+- Per inserire delle nuove notizie o delle news, andare su Gestione argomenti per creare l'argomento che ingloberà la serie di notizie
+  e poi andare su Gestione Pagine Dinamiche per creare la news
+- Per cambiare i parametri del sito, andare nella voce parametri ed inserire i dati correttamente. Poi per avviare il cambiamento andare alla voce CONFERMA, 
+  e confermare il cambiamento
+
+  
+GESTIONE MULTILINGUE
+E' possibile con la versione 5 del BilugCMS, usufruire della funzione multilingue. Le lingue disponibili sono:
+Italiano(IT) - Inglese(EN) - Francese(FR) - Tedesco(DE) - Spagnolo(ES) - Portoghese(PT)
+
+- Per settare la lingua principale, andare nel menù Parametri del sito e settare la sigla della lingua scelta su _LINGUADEFAULT
+- Per settare come homepage una pagina statica per ogni lingua, andare nei Parametri del sito -> Pagine statiche e d inserire la pagina statica nella lingua che si vuole.
+La pagina statica dovrà essere settata a sua volta nelle lingua che si sta scegliendo, altrimenti non verrà visualizzata
+- E' possibile Scegliere direttamente la lingua della pagina, notizia, evento, ecc, direttamente alla sua creazione, ed in base a dove si trova l'utente, verranno
+visti solo i contenuti pertinenti con la lingua scelta 
+  
+  
+INDICIZZAZIONE
+
+- Puoi inserire description e keywords principali tra i parametri del sito, e per ogni singola pagina che viene creata
+- In mancanza di description e keywords, con la nuova indicizzazione, tramite i nomi delle pagine ed il nome del sito, i parametri vengono 
+  generati in automatico.
+  
+  
+  
+  
+  
+  
+Per informazioni generali sul bilug e sulla programmazione, visitare http://camarda.vilnet.it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,288 @@
+/* license
+
+BilugCMS (http://www.bilug.it) - Content Management System for dynamic web sites
+Copyright (C) 2005-2008  Federico Villa and Alessio Loro Piana
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+For reference, contact bilugcms@vilnet.it
+
+
+license */
+
+/* Configurazioni di Base Comuni*/
+
+body {
+	background: #333;
+	width: 100%;
+	height: 100%;
+	font-family : Verdana,Arial,Helvetica;
+	font-size : 11px;
+	color : #676361;
+	background: url( ../img/bg.jpg ) left top repeat scroll;
+}
+
+#content{
+	background: url( ../img/bg-2.png ) left top repeat-x;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+a, a:visited, a:link, a:active, a:focus {
+	color: #FEB21E;	
+} 
+a:hover {		
+	text-decoration: underline;
+} 
+
+
+h1 { color: #fff; }
+h2 { font-size: 28px; color: #FEB21E; }
+h3 {}
+h4 {}
+h5 {}
+
+
+input[type="submit"], input[type="button"], input[type="reset"],
+button, .btn {
+	background: url( ../img/button.gif ) left top no-repeat;
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+	width: 189px;
+	height: 36px;
+	cursor: pointer;
+}
+input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover,
+button:hover, .btn:hover {
+	background: url( ../img/button.gif ) left bottom no-repeat;
+}
+
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(236, 176, 82, 0.8);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(236, 176, 82, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(236, 176, 82, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(236, 176, 82, 0.6);
+}
+
+
+
+.blocco { margin-bottom: 30px; }
+
+.textlato { width: 200px; }
+
+
+/* Contenuto Max width e Centratura*/
+.contenuto { width: 990px; margin: 60px auto 0; }
+
+.centrale{ 
+	background: url( ../img/divider.gif ) 715px top repeat-y;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	padding: 10px 0;
+}
+
+.testa { margin-bottom: 10px; }
+
+/* menù a tendina */
+
+.blocco-menu-tendina {  
+	width: 650px;
+	float: left;
+}
+.blocco-menu-tendina ul.menu { 
+	padding-left: 20px;
+	position: relative;
+	text-align: center;
+}
+.blocco-menu-tendina ul.menu .menulink { 
+	background: url( ../img/menu.png ) left top no-repeat; 
+	width: 131px; 
+	height: 143px; 
+	line-height: 120px; 
+	font-weight: bold;
+	font-size: 18px;
+	display: block;
+	color:#fff;
+}
+.blocco-menu-tendina ul.menu .menulink:hover, 
+.blocco-menu-tendina ul.menu .menuhover, 
+.blocco-menu-tendina ul.menu li.link_uri .menulink { 
+	background: url( ../img/menu.png ) right top no-repeat; 
+	color: #fea017;
+	text-decoration: none;
+}
+
+
+/* logo */
+
+.logo { width: 340px; height: auto; float: left; margin-top: 15px; }
+.logo a { background: none; text-decoration: none; }
+.logo a  img { width: auto; height: auto; }
+
+
+.blocco-bandierine-multilingua { margin-top: 10px; }
+.blocco-bandierine-multilingua a {
+	display: block;
+	float: right;
+	margin-left: 7px;
+	width: 30px;
+	height: auto;
+}
+.blocco-bandierine-multilingua a img { display: block; width: 30px; height: auto; }
+
+
+
+/* laterale */
+
+.sinistra { display: none; }
+.destra { float: right; width: 260px; }
+
+
+
+/* Modulo per social plugins */
+
+.blocco_plugins { background: none; }
+.blocco_plugins h3 { display: none; }
+.blocco_plugins .modulo { background: none; }
+.blocco_plugins .modulo .plugin { text-align: left; margin-bottom: 10px; }
+
+
+
+.blocco-bandierine-multilingua { margin: auto; width: 130px; }
+.blocco-bandierine-multilingua a {
+	display: block;
+	float: left;
+	width: 35px;
+	height: auto;
+	margin: 4px;
+}
+.blocco-bandierine-multilingua a img {
+	display: block;
+	width: 35px;
+	height: auto;
+}
+
+
+
+
+
+/* Per il modulo della newsbox */
+
+.piede .blocco-newsbox { width: 300px; float: left; margin-right: 40px; }
+.piede .blocco-newsbox:nth-child(3) { margin-right: 0; }
+.piede .blocco-newsbox .immagine { display: none; }
+.piede .blocco-newsbox .immagine img {}
+.piede .blocco-newsbox .testo { font-size: 10px; margin-top: 5px; }
+.piede .blocco-newsbox .testo a { color: #FEB21E; border: 0; }
+.piede .blocco-newsbox .testo a:hover { text-decoration: none; }
+
+
+.blocco-sitemap { width: auto; float: none; clear: both; background: #292421; padding: 10px; border-radius: 10px; border: 1px solid #333; }
+.blocco-sitemap > h3 { display: none; }
+.blocco-sitemap .modulo { text-align: left; }
+.blocco-sitemap .modulo .modulo-princ-sitemap { float: left; width: 220px; margin: 0; }
+.blocco-sitemap .modulo .modulo-sitemap { height: 150px; }
+.blocco-sitemap .modulo .modulo-first { border-left: 0; }
+.blocco-sitemap .modulo .modulo-last { border-right: 0; }
+.blocco-sitemap .modulo .modulo-sitemap h3 { margin-bottom: 30px; text-align: left; font-size: 20px; }
+.blocco-sitemap .modulo .modulo-sitemap > div {  }
+.blocco-sitemap .modulo .modulo-sitemap a { padding: 10px 0; display: block; text-align: left; border-bottom: 1px solid #3D3836; }
+.blocco-sitemap .modulo .modulo-sitemap a:hover { color: #eee; text-decoration: none; }
+
+
+
+.laterale li a
+{
+	display: block;
+	color: #676361;
+	font-size: 15px;
+	padding: 5px 10px; 
+}
+.laterale li a:hover{
+	background: #302B28;
+	text-decoration: none;
+	color: #eee;
+}
+.laterale a.link_inline { font-size: 11px; }
+.laterale a.link_inline:hover {}
+.laterale h3{	
+	color: #fff;
+	font-size: 18px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+
+/* Corpo */
+
+.corpo{ float: left; width: 700px;	 }
+.corpo p{ text-align: justify;	}
+
+
+.elenco a ,.elenco a:visited, .elenco a:link{
+	float: left;
+	height: 20px;
+	width: 620px;	
+	border-bottom: 1px dashed #000080;
+	padding-bottom:3px;		
+}
+
+.elenco a:hover{ background:#dedee0; color:#333; }	
+.elenco a,.elenco a:visited, .elenco a:link {	padding-top: 10px; text-decoration: none; }
+ 
+
+.elencoimg , .elencoimg a:hover, .elencoimg a:visited, .elencoimg a:link {
+	float: right;
+	height: 30px;	
+	width: 40px;
+	background-color: #fff;
+	/*background-color: #dedee0;*/
+}
+
+
+/* Piede */
+
+.piede{ text-align: center;	padding-bottom: 30px; }
+.piede .bottoni { clear: both; }
+
+
+
+
+
+
+
+
+
+
+

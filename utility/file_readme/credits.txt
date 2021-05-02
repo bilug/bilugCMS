@@ -1,0 +1,18 @@
+Ringrazio, per il contributo essenziale allo sviluppo del BilugCMS, i
+seguenti sviluppatori:
+
+- Riccardo Menarbin
+- Alessio Loro Piana
+- Daigor Landi
+- Nicolo' Lucia
+- Mirko Camarda
+- Roberto Mocci
+
+- Marco Barbera
+- Paolo Ciarrocchi
+- Andrea Musuruane
+- Anna Kryuchenkova
+- Shavy Tello Diaz
+
+Si ringrazia Mark James (http://www.famfamfam.com/lab/icons/silk/) per alcune icone utilizzate.
+Si ringrazia Alessandro Starita per la libreria GestPayCrypt

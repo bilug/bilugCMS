@@ -1,0 +1,74 @@
+<? /* license
+
+BilugCMS (http://www.bilug.it) - Content Management System for dynamic web sites
+Copyright (C) 2005-2008  Federico Villa and Alessio Loro Piana
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+For reference, contact bilugcms@vilnet.it
+
+
+license */ ?>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="robots" content="Index, Follow">
+
+<?php /*<meta name="expires" content="Never"/>
+<meta name="robots" content="Index, Follow"/>
+<meta name="revisit-after" content="7 Days"/>*/ ?>
+
+<meta name="generator" content="BilugCMS">
+
+
+<?php if ( _ACCESSIBILITA != 4 ) : ?>
+	<link rel="stylesheet" type="text/css" href="<?=_URLSITO?>/css/jquery-coda-slider.css">
+	<link rel="stylesheet" type="text/css" href="<?=_URLSITO?>/css/jquery.cluetip.css">
+	<link rel="stylesheet" type="text/css" href="<?=_URLSITO?>/css/jquery.lightbox.css">
+	<link rel="stylesheet" type="text/css" href="<?=_URLSITO?>/css/stile.css">
+	<link rel="stylesheet" type="text/css" href="<?=_URLSITO?>/templates/<?=_TEMPLATE?>/css/cssstile.css">
+
+	<!--[if IE ]>
+	  <link rel="stylesheet" type="text/css" href="<?=_URLSITO?>/css/iehack.css">
+	<![endif]-->
+	<!--[if lt IE 7]>
+	  <link rel="stylesheet" type="text/css" href="<?=_URLSITO?>/css/ie6.css">
+	<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="<?=_URLSITO?>/custom/custom.css">
+
+	<?php if ( _ACCESSIBILITA < 4 ) : ?>
+		<style type="text/css">
+		<?php switch( _ACCESSIBILITA ) : 
+			case 1: ?>
+				body {  }
+			<?php break;
+			case 2: ?>
+				body { font-size: 0.8em !important; }
+			<?php break;
+			case 3: ?>
+				body { font-size: 0.9em !important; }
+			<?php break;
+			default: ?>
+				body {  }
+			<?php break; ?>
+		<?php endswitch; ?>
+		</style>
+	<?php endif; ?>	
+	
+<?php endif; ?>
+
+<link rel="Shortcut Icon" href="<?=_URLSITO?>/templates/<?=_TEMPLATE?>/img/favicon.ico" type="image/x-icon">
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<?=_URLSITO?>/rss.php">
+
+<script type="text/javascript" src="<?=_URLSITO?>/js/jquery.js"></script>

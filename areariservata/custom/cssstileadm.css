@@ -1,0 +1,433 @@
+/* license
+
+BilugCMS (http://www.bilug.it) - Content Management System for dynamic web sites
+Copyright (C) 2005-2008  Federico Villa and Alessio Loro Piana
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+For reference, contact bilugcms@vilnet.it
+
+
+license */
+
+/* Configurazioni di Base Comuni*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: #888888;
+	width: 100%;
+	font-family : Verdana,Arial,Helvetica;
+	font-size : 8pt;
+	color : #444;	
+}
+a{
+	text-decoration: none;
+	color : #333;	
+	font-style:italic;
+} 
+a:hover{		
+	background: #cdcdcd;
+	color: #003399;
+} 
+
+h1,h2,h3,h4,h5{
+	margin: 0;
+	padding: 0;
+	font-weight: bolder;
+	font-size: 8pt;	
+	text-align: center;	
+}
+label
+{
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	margin: 0;
+	padding: 0;
+ 	border: 0;
+}
+
+ul {	
+	margin: 0;
+	padding: 0;		
+	list-style: none;
+	text-align: left;
+}
+
+li {	
+	margin: 0;
+	padding: 0;	
+}
+
+form { text-align: left; }
+
+textarea { display: block; margin: auto; }
+
+.area_mail {
+	width: 700px;
+	height: 300px;
+	padding: 10px;
+	border: 1px solid #888;
+	border-radius: 5px;
+	text-align: left;
+}
+
+.bilug-consiglio {
+	width: 90%;
+	border: 1px dotted #888;
+	border-radius: 5px;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.Cap { text-transform: capitalize; }
+
+/* Contenuto Max width e Centratura*/
+#contenutoadm {
+	width: 990px;
+	margin: 0 auto;
+	box-shadow: 3px 0px 2px #003399, -3px 0px 2px #003399;
+}
+/* Testa con logo e link Amministrazione*/
+
+#testadm{
+	background: #fff;
+}
+
+#testadm #logoadm{
+	width: 990px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+/* Area Amministrazione*/
+a.area_riservata, a.area_riservata:hover
+{
+	position:absolute;
+	top: 0;
+	right: 0;
+	color : #fff;
+	background: #fff;
+}
+
+/*Variazione Admin*/
+#centrale #corpoadm{	
+	padding: 0 10px 10px 10px;	
+	background: #FFF;
+}
+
+#centrale h3{	
+	height: 18px;
+	background: url(../img/h3adm.png) repeat-x;
+	color: #000;
+	padding-top: 2px;	
+	margin-bottom: 5px;	
+	margin-left: 25px;	
+	margin-right: 25px;	
+	
+}
+
+#centrale h4 {
+	text-align: left;
+	font-size: 16px;
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+/* Piede amministrazione */
+#piedeadm{
+	height: 20px;
+	padding-top: 5px;	
+	background: url(../img/piedeadm.png) bottom repeat-x #FFF;
+	text-align:center;
+}
+
+#piedeadm .piedelogo{
+	border: 0;
+	width: 48px;
+	height: 16px;
+}
+
+.azzerafloat {
+	clear:both;
+}
+.azzerafloata{
+	clear:both;
+	border-bottom: 2px solid #7da2d6;
+	margin-bottom: 1px;
+}
+
+.contenitore{
+	text-align: left;
+	border-top: 1px solid #444444;	
+	border-left: 1px solid #444444;
+	border-right: 2px solid #444444;
+	border-bottom: 2px solid #444444;
+	padding: 5px 15px;	
+	margin-bottom: 10px;
+}
+
+
+.help-block { font-size: larger; padding: 10px; border: 2px solid #888; margin-bottom: 10px; }
+
+/* per la ricerca ecommerce */
+.listato_cerca {
+	margin-top: 20px;
+}
+
+.contenitore h5{
+	text-align:left;
+}
+
+.contenitore .filtri{ margin-bottom: 10px;}
+.contenitore .filtri .campo { float: left; margin-left: 10px;}
+
+.contenitore .bordo{
+	margin: 5px 0;
+	text-align: center;
+	border-top: 1px solid #444444;	
+	border-left: 1px solid #444444;
+	border-right: 2px solid #444444;
+	border-bottom: 2px solid #444444;
+	padding: 10px 0 0 10px;	
+}
+.contenitore .float20{
+	float: left;
+	width: 20px;
+}
+.contenitore .float50{
+	float: left;
+	width: 50px;
+}
+.contenitore .float70{
+	float: left;
+	width: 70px;
+}
+.contenitore .float80{
+	float: left;
+	width: 80px;
+}
+.contenitore .float90{
+	float: left;
+	width: 90px;
+}
+.contenitore .float100{
+	float: left;
+	width: 100px;
+}
+.contenitore .float140{
+	float: left;
+	width: 140px;
+}
+.contenitore .float160{
+	float: left;
+	width: 160px;
+}
+.contenitore .float180{
+	float: left;
+	width: 180px;
+}
+.contenitore .float200{
+	float: left;
+	width: 200px;
+}
+.contenitore .float187{
+	float: left;
+	width: 187px;
+}
+.contenitore .float230{
+	float: left;
+	width: 230px;
+}
+.contenitore .float290{
+	float: left;
+	width: 290px;
+}
+.contenitore .float300{
+	float: left;
+	width: 300px;
+}
+.contenitore .float400{
+	float: left;
+	width: 400px;
+}
+.contenitore .float460{
+	float: left;
+	width: 460px;
+}
+.contenitore .float500{
+	float: left;
+	width: 500px;
+}
+.contenitore .float615{
+	float: left;
+	width: 615px;
+}
+.contenitore .float700{
+	float: left;
+	width: 700px;
+}
+.contenitore .float800{
+	float: left;
+	width: 800px;
+}
+
+.contenitore .galleria{
+	float: left;
+	width: 150px;
+	height: 170px;
+	padding: 5px 0 0 5px;
+	border-top: 1px solid #bfd9f0;	
+	border-left: 1px solid #bfd9f0;
+	border-right: 2px solid #7da2d6;
+	border-bottom: 2px solid #7da2d6;
+	overflow: hidden;
+}
+.descarg{	
+	margin: 2px 15px;
+	font-size: 10pt;
+	font-style: italic;	
+}
+.descgal{
+	margin: 2px 15px;
+	font-size: 10pt;
+	font-style: italic;
+}
+.contenitore .galleria1{
+	width: 140px;
+	height: 140px;
+	text-align: center;
+	vertical-align: middle;		
+}
+.contenitore .galnome{
+	text-align: center;
+	font-size: .8em;	
+}
+.evidenzia {
+  color: #000;
+  margin-bottom: 15px;
+  padding: 3px 0;
+  line-height: 24px;
+}
+.indent {
+  padding-left: 30px;
+}
+.evidenzia a:hover { color: #003399; }
+
+ul li .evidenzia {}
+ul li .evidenzia ul { padding-left: 30px; }
+ul li .evidenzia ul li {}
+
+/*Orientamenti per visualizzazioni tabellari nel corpo*/
+.centrato {
+	text-align:center;
+	border-top: 1px solid #bfd9f0;	
+	border-left: 1px solid #bfd9f0;
+	border-right: 2px solid #7da2d6;
+	border-bottom: 2px solid #7da2d6;	
+}
+.centro
+{
+	padding: 10px;	
+}
+.sinistra{
+	float:left;
+	padding: 10px;
+	width: 150px;
+}
+.destra{
+	float:right;
+	padding: 10px;
+	width: 150px;
+}
+
+ul.tab {	
+	list-style:none;	
+	 
+}
+
+ul.tab li{
+	background:url(../img/ingr.png) top left no-repeat;	
+	height: 20px;
+	padding-top: 2px;	 
+	padding-left: 20px;
+}
+
+.versione
+{
+	position:relative;
+	z-index: 0;
+	left: -30px;
+	top: 1px;
+	font-size: 0.7em;
+}
+.rss{
+	float:left;
+	height: 32px;
+	padding: 10px 12px;
+}
+
+div.nascondi
+{
+	height: 100%;
+}
+
+.autore{}
+.argomento{}
+.random {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 5px;
+	text-align:center;	
+	border-top: 1px solid #bfd9f0;	
+	border-left: 1px solid #bfd9f0;
+	border-right: 2px solid #7da2d6;
+	border-bottom: 2px solid #7da2d6;	
+}
+
+.menu-ico { width: 15px; height: auto; }
+.ico { width: 20px; height: auto; }
+
+#navig {
+width: 20px;
+height: 15px;
+padding: 0px 2px;
+}
+
+
+
+a.linkico {
+width: 18px;
+height: 18px;
+float: right;
+}
+img.linkico {
+width: 18px;
+height: 18px;
+float: right;
+}
+

@@ -1,0 +1,649 @@
+/* license
+
+BilugCMS (http://www.bilug.it) - Content Management System for dynamic web sites
+Copyright (C) 2005-2008  Federico Villa and Alessio Loro Piana
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+For reference, contact bilugcms@vilnet.it
+
+
+license */
+
+/* Configurazioni di Base Comuni*/
+
+body {
+	color : #272727;	
+}
+
+a{
+	color: #272727;	
+} 
+a:hover{	
+	text-decoration: underline;
+} 
+
+h1, h2, h3, h4, h5 { font-weight: normal; }
+
+h1{	
+	color: #ff9900;
+	font-size: 28px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+h2{	
+	color: #555;
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.blocco { margin-bottom: 20px; }
+
+.content {}
+
+.contenuto {
+	width: 990px;
+	margin: 0 auto;
+}
+
+.centrale{}
+
+
+
+
+/* testa */
+
+.testa { margin-top: 5px;margin-bottom: 20px; }
+.logo{ margin: 0 auto; }
+.logo a { background: none; text-decoration: none; }
+.logo a  img { width: auto; height: auto; }
+
+
+
+/* laterale */
+
+.laterale { width: 170px; }
+.laterale .blocco{
+	padding-bottom: 5px;
+	background: url(../img/box_bottom_left_right.gif) left bottom no-repeat scroll #e6e7e9;	
+}
+.laterale .modulo { padding: 0 5px; }
+.laterale h3{	
+	height: 18px;
+	line-height: 18px;
+	background: url(../img/box_top_left_right.gif) no-repeat scroll #ff9900;
+	border-bottom: 1px solid #595a5e;
+	color: #fff;
+	font-size: 13px;
+	text-align: center;
+}
+
+.laterale li a {	
+	padding: 3px 0;
+	border-bottom: 1px dotted #272727;
+	text-transform: uppercase;
+}
+
+.laterale li a:hover{	
+	text-decoration: none;
+	border-bottom: 1px dotted #f90;
+}
+.sinistra ul li a:hover {
+	background: url(../img/triangolo_left.png) right center no-repeat scroll;
+}
+.destra ul li a:hover {
+	background: url(../img/triangolo_right.png) left center no-repeat scroll;
+}
+
+.destra { float: right; }
+.destra ul { text-align: right; }
+
+
+/* Corpo */
+
+.corpo { float:left; width: 630px; margin-left: 10px; }
+
+.corpo .contenitore  h1 { font-size: 23px; }
+.corpo .contenitore  h2 { font-size: 18px; }
+
+.corpo a { font-style: italic; }
+
+.corpo h3{	
+	margin: 10px 0;
+	font-size: 15px;
+	color: #888;
+}
+
+.corpo ul{	
+	margin-bottom: 20px;	
+	background: #e6e7e9;	
+}
+
+.corpo ul li{	
+	padding-left: 15px;
+	margin-bottom: 8px;
+}
+
+.corpo ul.argo {
+	background: #fff;
+	list-style: none;
+}
+
+.corpo ul.argo li {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.corpo ul.galleria-arg {
+	background: #fff;
+	list-style: none;
+}
+
+.corpo ul.galleria-arg li {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.corpo ul.galleria-arg li a {
+	border-bottom: 1px dashed #333;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 5px;	
+}
+
+.corpo ul.galleria-arg li a:hover {
+	border-bottom: 1px solid #333;
+	text-decoration: none;
+}
+
+.blocco_ultime_notizie h3{
+	height: 20px;	
+	line-height: 20px;	
+	background: #ff9900;
+	text-align: left;
+	padding-left: 10px;
+	border-bottom: 1px solid #373737;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.elenco {
+	float: left;
+	width: 590px;		
+	
+}
+
+.elenco a, .elenco a:active, .elenco a:visited, .elenco a:link { 
+	color: #333; 
+	border-bottom: 1px dashed #333;
+	padding-left: 5px;
+	height: 20px;
+	line-height: 20px;
+	display: block;
+}	
+.elenco a:hover { text-decoration: none; border-bottom: 1px solid #333; }
+
+.elencoimg {
+	float: right;
+	height: 25px;	
+	width: 30px;
+}
+
+.elencoimg a:visited, .elencoimg a:link {
+
+}
+
+.elencoimg a:hover {
+}
+
+
+/* Piede */
+.piede{
+	margin-top: 30px;
+	width: 100%;
+	text-align: center;	
+}
+.piede .blocco { margin-bottom: 0; }
+.piede .piedipagina { margin: 10px 0; color: #888; }
+.piede .bottoni {
+	padding-top: 5px;	
+	background: url(../img/box_top_piede.gif) no-repeat scroll #e6e7e9;
+}
+
+
+
+
+/* contenitore corpo */
+
+.contenitore{
+	text-align: center;
+	border-top: 1px solid #595a5e;	
+	border-left: 1px solid #595a5e;
+	border-right: 2px solid #595a5e;
+	border-bottom: 2px solid #595a5e;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.contenitore h1{
+	height: 20px;
+	line-height: 20px;
+}
+.contenitore h5{
+	text-align:left;
+}
+
+.contenitore .bordo{
+	margin: 5px 0;
+	text-align: center;
+	border-top: 1px solid #595a5e;	
+	border-left: 1px solid #595a5e;
+	border-right: 2px solid #595a5e;
+	border-bottom: 2px solid #595a5e;
+	padding: 10px 0 0 10px;	
+}
+
+
+/* gallerie corpo */
+
+.galleria{
+	float: left;
+	width: 198px;
+	overflow: hidden;
+	margin-right: 12px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+.descarg{	
+	margin: 2px 15px;
+	font-size: 10pt;
+	font-style: italic;	
+}
+.descgal{
+	margin: 2px 15px;
+	font-size: 11px;
+	font-style: italic;
+}
+.galleria1 { padding: 7px; border: 1px solid #f90; height: 150px; overflow: hidden; }
+.galleria1:hover { padding: 5px; border: 3px solid #888; }
+.galleria1 img { width: 180px; height: auto; max-height: 120px;  }
+.galnome{
+	text-align: left;
+	font-size: 11px;
+	margin-top: 5px;	
+}
+.evidenzia:hover{
+	background: #7da2d6;
+}
+
+
+/* menu a tendina */
+
+.blocco-menu-tendina {
+    width:100%;
+    margin-top: 10px;
+    height: 40px;
+    background: url(../img/navtop.png) left top no-repeat scroll;
+ 	position:relative;
+}
+.blocco-menu-tendina  ul {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    margin: 0 10px;
+    padding: 0;
+}
+.blocco-menu-tendina  li {
+	margin-top: 9px;
+	width:124px;
+	display: inline;
+	border-right: 2px solid #fff;
+}
+
+.blocco-menu-tendina ul.menu {
+	list-style:none; 
+	margin:0; padding:0;
+}
+
+.blocco-menu-tendina ul.menu * {
+	margin:0; padding:0
+}
+
+.blocco-menu-tendina ul.menu a {
+	display:block; 
+	color:#f00; 
+	text-decoration:none;
+}
+
+.blocco-menu-tendina ul.menu li {
+	position:relative; 
+	float:left; 
+	margin-right: 0;
+	height: auto !important;
+}
+.blocco-menu-tendina ul.menu ul {
+	position:absolute; 
+	top: 23px; left:25px; 
+	background: #868686; 
+	display:none; 
+	width:170px !important; 
+	list-style:none;
+	text-align: left !important;	
+}
+
+.blocco-menu-tendina ul.menu ul li {
+	position:relative; 
+	border: 0 !important;
+	margin:0 !important;
+	background-color:#F94B00;
+}
+
+.blocco-menu-tendina ul.menu ul li a {
+	font-style: normal;
+	color: #fff;
+	padding: 5px 0 5px 10px !important;
+	height: auto !important;
+	width: 160px;
+	padding:0;
+	display:block; 
+	border-bottom: 1px solid #fff !important;
+}
+
+.blocco-menu-tendina ul.menu ul li a:hover {
+	background-color:#fff;
+	color: #F94B00;
+	opacity: 0.8 !important;
+}
+
+.blocco-menu-tendina ul.menu ul ul {
+	left:148px; top:-1px
+}
+
+.blocco-menu-tendina ul.menu .menulink {
+	font-weight:bold; 
+	font-style: normal; 
+	background: none; 
+    color: #fff;
+	padding: 5px 0;
+	width:100px;
+	margin: 0 auto;
+}
+
+.blocco-menu-tendina ul.menu .menulink:hover, 
+.blocco-menu-tendina ul.menu li.link_uri .menulink {
+	background: url(../img/navtop_hover.png) top left no-repeat scroll; 
+	color: #ff9900;
+}
+
+.blocco-menu-tendina ul.menu .menuhover {
+	background: none !important;
+	color: #fff !important;
+}
+
+.blocco-menu-tendina ul.menu .sub {
+	background:#d1d1d1;
+}
+
+.blocco-menu-tendina ul.menu .topline {
+	border-top:1px solid #aaa;
+}
+
+
+/*Ecommerce*/
+
+/* foto principale */
+#ecomprinc{
+max-width:290px;
+max-height:290px;
+width:290px;
+}
+
+/*foto facoltative*/
+#ecomsec{
+max-width:120px;
+max-height:120px;
+width:120px;
+}
+
+/*foto carrello icona*/
+#ecomico{
+	width:40px;
+	height:30px;
+}
+
+
+a.linkico {
+	float: right;
+	text-align: left;
+	background: inherit !important;
+	border:0 !important;
+	display:block;
+	margin-top: -4px !important;
+}
+img.linkico {
+	border:0;
+	width: auto;
+	height: 18px;
+	float: right;
+	display:block;
+}
+
+a.link_carrello {
+	display: inline;
+	text-align: left;
+	background: inherit !important;
+	color: #fff !important;
+	line-height: 18px;
+	padding-left: 5px;
+}
+a.link_carrello:hover {
+text-decoration: underline;
+}
+
+#carrello{
+float: right;
+width: 157px;
+}
+#carrelloTop{
+float: right;
+width: 157px;
+margin-top: 15px;
+}
+#carrelloBottom{
+float: right;
+width: 157px;
+margin-top: -15px;
+}
+
+#carrello img, #carrelloTop img, #carrelloBottom img {
+	display: block;
+	float: right;
+	margin-top: -7px;
+}
+
+.go {
+	text-align: right;
+	margin-top: 10px;
+}
+
+.go a {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+
+.social_network {
+	width: 100%;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.social_network #fb_ico, .social_network #googlePlus_ico, .social_network #twitter_ico { float: left; }
+
+.social_network #fb_ico {  }
+.social_network #googlePlus_ico {}
+.social_network #twitter_ico {}
+
+
+/*** Mappa di google ***/
+#map_canvas {
+	height:300px !important;
+	width:400px;
+	margin: 0 auto 20px;
+}
+
+
+
+/*** Vetrina standard ***/
+
+#corpo .vetrina-standard-testo {
+	margin: 20px 0;
+}
+
+#corpo #vetrina-standard-catalogo {
+	width: auto;
+	border: 2px solid #888;
+	border-radius: 8px;
+	font-size: 11px;
+}
+
+#corpo #vetrina-standard-catalogo p {
+	text-align: left;
+}
+
+#corpo #vetrina-standard-catalogo .titolo-vetrina {
+	width: auto;
+	border-bottom: 2px solid #333;
+	padding: 3px 10px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	background: #888;
+}
+
+#corpo #vetrina-standard-catalogo .blocco-catalogo {  }
+
+#corpo #vetrina-standard-catalogo .blocco-catalogo .blocco-vetrina { 
+	width: 165px; 
+	float: left; 
+	background: #D0D3D8; 
+	height: 350px; 
+	margin-right: 2px;
+}
+
+#corpo #vetrina-standard-catalogo .blocco-catalogo .blocco-vetrina:hover { background: #B6BBC2; }
+
+#corpo #vetrina-standard-catalogo .blocco-catalogo .primo-articolo {}
+#corpo #vetrina-standard-catalogo .blocco-catalogo .ultimo-articolo { margin-right: 0; }
+
+#corpo #vetrina-standard-catalogo .blocco-catalogo .blocco-vetrina .blocco-vetrina-articolo { padding: 5px; }
+#corpo #vetrina-standard-catalogo .blocco-catalogo .blocco-vetrina .primo-articolo {  }
+#corpo #vetrina-standard-catalogo .blocco-catalogo .blocco-vetrina .ultimo-articolo {  }
+
+#corpo #vetrina-standard-catalogo .blocco-catalogo .blocco-vetrina .blocco-vetrina-articolo .titolo {
+	font-size: 10px;
+	color: 888;
+	font-weight: bold;
+	height: 30px;
+}
+
+#corpo #vetrina-standard-catalogo .blocco-catalogo .blocco-vetrina .blocco-vetrina-articolo .testo {
+	height: 80px;
+	font-size: 9px;
+}
+
+#corpo #vetrina-standard-catalogo .blocco-catalogo .blocco-vetrina .blocco-vetrina-articolo .immagine { height: 175px; }
+#corpo #vetrina-standard-catalogo .blocco-catalogo .blocco-vetrina .blocco-vetrina-articolo .immagine img {
+	width: 155px;
+	height: auto;
+}
+
+#corpo #vetrina-standard-catalogo .blocco-catalogo .blocco-vetrina .blocco-vetrina-articolo .prezzo {
+	color: #f00;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	height: 25px;
+}
+
+#corpo #vetrina-standard-catalogo .blocco-catalogo .blocco-vetrina .blocco-vetrina-articolo .visualizza {}
+#corpo #vetrina-standard-catalogo .blocco-catalogo .blocco-vetrina .blocco-vetrina-articolo .visualizza a {
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	margin: auto;
+	width: 120px;
+	border: 1px solid #888;
+	border-radius: 3px;
+	padding: 2px 0;
+	background: #ccc;
+}
+
+#corpo #vetrina-standard-catalogo .blocco-catalogo .blocco-vetrina .blocco-vetrina-articolo .visualizza a:hover { 
+	text-decoration: none; 
+	background: #3F3F3F;
+	color: #fff;
+}
+
+
+
+
+
+/*** Modulo dei più cliccati ***/
+
+#centrale #sinistra .cliccato {}
+
+#centrale #sinistra .cliccato .riga_cliccato { background: #ccc; margin-bottom: 5px; }
+
+#centrale #sinistra .cliccato .riga_cliccato a { 
+	display: inline;
+	text-decoration: none;
+	border: 0;
+}
+#centrale #sinistra .cliccato .riga_cliccato a:hover { 
+	text-decoration: none;
+	background: none;
+}
+
+
+#centrale #sinistra .cliccato .riga_cliccato .immagine { 
+	width: 70px; 
+	height: auto; 
+	float:left;
+	padding: 5px; 
+	background: #ccc;
+}
+#centrale #sinistra .cliccato .riga_cliccato .immagine a img { 
+	width: 70px; 
+	height: auto; 
+	border: 0;
+}
+
+#centrale #sinistra .cliccato .riga_cliccato .titolo {
+	font-weight: bold;
+	font-size: 12px;
+	padding: 2px 3px;
+	border-bottom: 1px solid;
+}
+#centrale #sinistra .cliccato .riga_cliccato .descrizione {
+	padding: 5px 3px;
+	font-size: 10px;
+}
+

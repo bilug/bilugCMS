@@ -1,0 +1,297 @@
+/* license
+
+BilugCMS (http://www.bilug.it) - Content Management System for dynamic web sites
+Copyright (C) 2005-2008  Federico Villa and Alessio Loro Piana
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+For reference, contact bilugcms@vilnet.it
+
+
+license */
+
+/* Configurazioni di Base Comuni*/
+
+body { 
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-size: 14px;	
+	background-color: #fff; 
+}
+
+h1 { color: #ff6600; }
+
+input[type="submit"], input[type="button"], input[type="reset"],
+button, .btn {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active, 
+input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active, 
+input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:active, 
+button:hover, button:focus, button:active, 
+.btn:hover, .btn:focus, .btn:active {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+button:active,
+.btn:active
+{
+  background-color: #cccccc \9;
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);  
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+button:focus,
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+a, a:link, a:visited, a:active { color: #ff6600; }
+a:hover { color: #b34700; }
+
+.textlato, select {
+	width: 250px;
+}
+
+.contenuto { 
+	width: auto; 
+}
+
+.centrale{ 
+	padding: 30px 0;
+	border-bottom: 3px solid #333;
+}
+
+header { 
+	background-color: #e8e8e8; 
+	border-bottom: 2px solid; 
+	border-color: #ccc;
+	padding: 20px 0;
+}
+
+footer {
+	padding: 30px 0;
+}
+
+header .testa, .centrale, footer .piede { 
+	width: 1100px; 
+	margin: 0 auto;
+}
+
+
+
+
+
+/* Laterale */
+
+.laterale { width: 280px; }
+.destra {}
+.sinistra {}
+
+.laterale h3 {
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 20px;
+	color: #31b9d0;
+}
+
+.laterale li {
+	padding-bottom: 8px;
+}
+.laterale li:before {
+	content: ">";
+	font-family: FontAwesome;
+	font-size: 21px;
+	font-weight: bold;
+	color: #ff6600;
+	margin-right: 10px;
+	position: relative;
+	top: 2px;
+}
+
+.laterale li h4, .laterale li a {
+	font-style: italic;
+	display: inline;
+	font-size: 15px;
+}
+
+.laterale li small { display: none; }
+
+
+/* Corpo */
+
+.corpo { width: 780px; }
+.corpo .testo {  }
+
+h3.last_notice { 
+	padding-top: 20px; 
+	margin-top: 20px; 
+	border-top: 3px solid #333;
+}
+
+.blocco_ultime_notizie {
+	padding-bottom: 10px; 
+	margin-bottom: 10px;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+
+/* piede */
+
+.piede {}
+
+.piede .blocco { width: 366px; }
+
+.piede, .piede a { color: #333; }
+
+.piede h3, .piede h4, .piede a {
+	font-weight: normal;
+	text-align: left;
+}
+
+.piede h4 {
+	
+}
+
+.piede h3 {
+	color: #ff6600;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+.piede h4, .piede a {
+	font-size: 12px;
+}
+
+.piedipagina { 
+	color: #31b9d0; 
+	text-align: left;
+	padding: 30px 0 0;
+}
+
+/* logo */
+
+.logo { float: left; width: 280px; }
+
+
+/* blocco accessibilità */
+
+.blocco-accessibilita { text-align: right; }
+.blocco-accessibilita a, .blocco-accessibilita a:hover { color: #333; }
+
+
+.corpo p{ 	}
+
+
+/* blocco link social */
+
+.blocco-link-social {}
+.blocco-link-social ul { text-align: left; }
+.blocco-link-social li {
+	text-align: left;
+}
+
+
+/* blocco TAG */
+
+.blocco-tag {}
+.blocco-tag ul { text-align: left; }
+
+
+/* Menù a tendina */
+
+.blocco-menu-tendina { float: right; font-size: 15px; width: 650px; margin: 0; }
+
+.blocco-menu-tendina ul.menu > li  {
+	
+} 
+.blocco-menu-tendina ul.menu > li > a { 
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 13px 30px;
+	border-radius: 4px;
+	color: #333;
+}
+.blocco-menu-tendina ul.menu > li > a:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #333;
+}
+
+
+/* argo */
+
+ul.argo li .elenco a {
+	width: 640px;
+}
+
+
+
+
+

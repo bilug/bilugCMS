@@ -1,0 +1,341 @@
+/* license
+
+BilugCMS (http://www.bilug.it) - Content Management System for dynamic web sites
+Copyright (C) 2005-2008  Federico Villa and Alessio Loro Piana
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+For reference, contact bilugcms@vilnet.it
+
+
+license */
+
+/* Configurazioni di Base Comuni*/
+
+@import url(http://fonts.googleapis.com/css?family=Playball);/*font-family: 'Playball', cursive;*/
+@import url(http://fonts.googleapis.com/css?family=Anton);/*font-family: 'Anton', sans-serif;*/
+@import url(http://fonts.googleapis.com/css?family=BenchNine:400,700);/*font-family: 'BenchNine', sans-serif;*/
+
+
+body { 
+	font-family : Arial,Helvetica, Verdana;
+	font-size : 13px;
+	color : #999;
+	background: url( ../img/bg.jpg ) left top repeat;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Anton', sans-serif;
+	font-weight: normal;
+}
+
+h1{	
+	color: #fff;
+	font-size: 30px;
+}
+
+h2{	
+	color: #40aad8;
+	font-size: 23px;
+	padding: 20px 0 15px;
+}
+
+h3 { padding: 15px 0 10px; font-size: 19px; }
+h3.last_notice {
+    border-top: 1px solid #555555;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+h4 { padding: 15px 0 10px; font-size: 16px; }
+
+h5 { padding: 15px 0 10px; font-size: 14px; }
+h5.citazione {
+    margin-top: 30px;
+    text-align: right;
+}
+
+a { color: #fff !important; }
+a:hover { text-decoration: none !important; color: #40aad8 !important; } 
+
+blockquote {
+    border-left: 5px solid #999999;
+    padding-left: 20px;
+}
+
+input[type="submit"], input[type="button"], input[type="reset"],
+button, .btn {
+	background-color: #47B9EB;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'BenchNine',sans-serif;
+    font-size: 20px;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 0;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active, 
+input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active, 
+input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:active, 
+button:hover, button:focus, button:active, 
+.btn:hover, .btn:focus, .btn:active {	
+	background-color: #fff;
+	color: #6f6f6f;
+}
+
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+button:active,
+.btn:active
+{
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+}
+
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+button:focus,
+.btn:focus {
+}
+
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	width: 230px;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(58, 59, 61, 0.8);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(58, 59, 61, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(58, 59, 61, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(58, 59, 61, 0.6);
+}
+
+
+.content { background: url( ../img/bg-header.jpg ) left top repeat-x; }
+
+.contenuto { 
+	width: 990px; 
+	padding: 40px 0; 
+	margin: 0 auto;
+	background: url(../img/bg-testa.png) left 97px no-repeat; 
+}
+
+.centrale{ 
+	padding: 20px 0;
+}
+
+
+
+
+/* testa */
+
+.testa {
+	margin-bottom: 50px; 
+	color: #fff; 
+	padding: 10px 45px;
+	background-color: #47b9eb;
+	height: 47px;
+}
+.testa .blocco { margin-bottom: 0; }
+
+
+
+
+/* Menù a tendina */
+
+.blocco-menu-tendina {  
+	width: 500px;
+	float: right;
+	font-family: 'BenchNine', sans-serif;
+	clear: none !important;
+}
+.blocco-menu-tendina ul.menu { 
+	padding-top: 16px;
+}
+.blocco-menu-tendina ul.menu li {
+	margin-right: 18px;
+	padding-right: 18px;
+	border-right: 2px solid #79D6FF;
+	margin-top: 0;
+}
+.blocco-menu-tendina ul.menu li.last_link {padding-right:0;margin-right:0; border: 0;}
+.blocco-menu-tendina ul.menu li.first_link {padding-left:0;margin-left:0;}
+.blocco-menu-tendina ul.menu .menulink {
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: bold;
+	border: 0;
+	padding: 0;
+	color: #fff;
+}
+.blocco-menu-tendina ul.menu .menulink:hover, 
+.blocco-menu-tendina ul.menu .menuhover, 
+.blocco-menu-tendina ul.menu li.link_uri .menulink { 
+	color: #000; 
+}
+
+
+
+
+
+/* Laterale */
+
+.laterale {}
+.sinistra { display: none; }
+.destra { width: 300px; }
+
+.laterale li h4 { padding: 0; margin: 0; }
+.laterale li small { font-size: 13px; }
+.laterale li a {
+	display: block;
+	font-size: 25px;
+	font-family: 'BenchNine', sans-serif;
+	padding: 5px 0;
+}
+
+.laterale h3{	
+	color: #fff;
+	font-size: 30px;
+}
+
+/* Corpo */
+
+.corpo { width: 650px; float: left; }
+.corpo .content-interno { padding: 0; }
+.corpo .testo {  }
+.corpo .testo-consiglio { font-size: 14px; }
+
+/* piede */
+
+.piede {
+	text-align: center;
+	padding-top: 25px;
+	border-top: 1px solid #555;
+}
+
+
+/* logo */
+
+.logo { width: 350px; height: auto; float: left; }
+
+
+
+/* Menù a tendina */
+
+.blocco-menu-tendina { clear: both; float: left; font-size: 15px; }
+
+.blocco-menu-tendina ul.menu > li > a { border-right: 1px solid #ccc; padding: 5px 20px; }
+.blocco-menu-tendina ul.menu > li > a:hover {}
+
+
+
+/* Blocco elenco argomenti */
+
+ul.argo, ul.argo h2 { padding: 0; }
+
+.elenco a ,.elenco a:visited, .elenco a:link{
+}
+
+.elenco a:hover{ }	
+.elenco a,.elenco a:visited, .elenco a:link {}
+ 
+
+.elencoimg , .elencoimg a:hover, .elencoimg a:visited, .elencoimg a:link {
+	float: right;
+	height: 30px;	
+	width: 40px;
+	background-color: #fff;
+	/*background-color: #dedee0;*/
+	display: none;
+}
+
+
+
+/* Modulo per social plugins */
+
+.laterale .blocco_plugins { background: none; }
+.laterale .blocco_plugins h3 { display: block; }
+.laterale .blocco_plugins .modulo { background: none; }
+.laterale .blocco_plugins .modulo .plugin { 
+	text-align: left; 
+	margin-bottom: 10px; 
+	float: left;
+    margin-right: 20px;
+}
+
+
+
+/* Blocco ultime notizie */
+
+.blocco_ultime_notizie {
+    border-bottom: 1px solid #555555;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.social_network {
+	text-align: center;
+	margin: 15px 0 20px;
+}
+
+
+/* plugin social network corpo */
+
+.social_network #fb_ico, .social_network #googlePlus_ico, .social_network #twitter_ico { float: left; }
+
+.social_network #fb_ico { margin-right: 25px;  }
+.social_network #fb_ico iframe {  }
+.social_network #googlePlus_ico {}
+.social_network #twitter_ico {}
+
+

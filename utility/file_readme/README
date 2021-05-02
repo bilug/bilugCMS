@@ -1,0 +1,22 @@
+ Come installare il BilugCMS
+
+1) Decompattare il file bilugcms.zip in una cartella di Apache
+2) Creare un database MySql
+3) Richiamare da browser install.php, che popolerà il database e creerà il file di connessione
+4) Ora il BilugCMS dovrebbe essere funzionante a tutti gli effetti.
+5) Per poter entrare nell'area amministrativa dovete puntare col vostro browser in "./areariservata" (per esempio: "bilugcms/areariservata" dove "bilugcms" è la cartella che avete creato sotto Apache) e vi apparirà la pagina di login per l'area di amministrazione.
+
+
+Nel database è impostato un solo utente, amministratore, usando il quale potete gestire completamente tutto il BilugCMS e creare nuovi utenti amministratori, superutenti o utenti standard.
+Utente amministratore: bilug
+Password amministratore: bilug
+
+Inoltre occorre dare i permessi in lettura e scrittura (per chi usa un sistema Gnu/Linux) alle seguenti dir:
+[custom]
+[img] sotto [html]
+[gals]
+
+
+
+***** Se si utilizza su windows... abilitare gli "Short tag PHP"
+=> es: su xampp aprire file php.ini dentro la cartella xampp e abilitare "short_open_tag = On"

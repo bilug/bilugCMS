@@ -1,0 +1,104 @@
+/************************************************************
+*
+* Consigli per una buona indicizzazione
+*
+* Scrivere tutti i testi in modo pertinente agli script del BilugCMS 
+*
+*
+*
+************************************************************/
+
+
+
+Di seguito, scrivo alcuni consigli per avere una corretta indicizzazione sui motori di ricerca, 
+per chi utilizza il BilugCMS.
+E' importatante seguire questa guida, perché il modo di scrivere alcuni campi, influirà sulla resa dell'indicizzazione.
+Tutte le operazioni sono da fare all'interno dell'area amministrativa.
+
+1. Andare nella voce parametri
+
+	- Scrivere il nome giusto del sito nella variabile _SITO
+
+	- Nelle description, scrivere un testo che descriva sinteticamente la home page del sito.
+	  Il testo non dovrebbe superare i 150 caratteri. Non inserire caratteri speciali ( es: !, ?, &, %, etc. ), ma inserire
+	  solo virgole punti o trattini. Non ripetere il nome del sito nelle description, visto il basso contenuto di caratteri che vengono 
+	  presi in considerazione.
+	  
+	  Es: Se stiamo parlando di come cucinare l'aragosta di Santo Domingo, una description errata sarebbe
+	  "Come cucinare" o "cucinare l'aragosta" o "aragosta da cucinare al pepe"
+	  Mentre invece sarebbe più corretto scrivere
+	  "Consigli su come cucinare in pochi semplici passi, l'aragosta di Santo Domingo"
+	  
+	  Quindi meglio essere il più inerenti possibili a ciò che si scrive
+		
+		
+	- Nelle keywords, scrivere in modo preciso le parole chiave con cui si vuole essere trovati sui motori di ricerca. Le keywods devono essere
+	  attinenti con quello che si sta inserendo nella pagina ( come per le description ). In questo caso le keywords che verranno inserite,
+	  saranno presenti su tutto il sito, quindi evitare di inserire parole che verranno messe in automatico dal CMS.
+	  
+	  Se pensiamo all'argomento di prima, potremmo usare una parole chiave tipo 
+	  "cucinare aragosta santo domingo,NomeSito cucinare aragosta santo domingo"
+	  Mentre invece sarebbe da evitare di scrivere parole come
+	  "aragosta,santo domingo,pochi passi"
+	  
+	  Notare che non ho fatto spazi tra le virgole, in realtà non si sa bene se può 
+	  influire o meno questo. Per sicurezza io scrivo sempre senza spazi.
+	  Da evitare qualsiasi carattere speciale al di fuori di lettere, numeri e virgole. Io non metto nemmeno gli articoli, ma 
+	  solo parole con un signoficato logico.
+	  
+2. Testi nelle pagina dinamiche. 
+	- Nella voce titolo, mettere un breve titolo, che descriva immediatamente di 
+	  cosa sta parlando (senza formattazione con punti e virgole) <h1>
+	  
+	- Nel sottotitolo, inserire una descrizione leggermente più dettagliata. Da notare che alcune parole delle keywords, verranno
+	  selezionate prendendo in cosiderazione anche il sottotitolo, dividendolo per ogni ',' che viene trovata. <h2>
+	  
+	- Nel testo, inserire dei contenuti pertinenti alle keywords, description e titoli inseriti in precedenza, 
+	  per avere il massimo dell'indicizzazione. 
+	
+	- Inserire nella voce description, una breve descrizione della notitizia
+	
+	- Inserire nella voce keywords, una serie di parole chiave, separate da virgola, inerenti alla notizia
+	  
+3. Testi nelle pagina statiche. 
+	- Nella voce titolo, mettere un breve titolo, che descriva immediatamente di 
+	  cosa sta parlando (dividere con il solo carattere '|' se ncessario, per i riferimenti alle keywords ed alle description) 
+		  
+	- Nel testo, inserire dei contenuti pertinenti alle keywords, description e titoli inseriti in precedenza, 
+	  per avere il massimo dell'indicizzazione. 
+
+	- Inserire nella voce description, una breve descrizione della pagina
+	
+	- Inserire nella voce keywords, una serie di parole chiave, separate da virgola, inerenti alla notizia
+	
+4. Generalmente sui contenuti.
+	- Se la pagina che si sta scrivendo ha più paragrafi, se si vuole inserire un sottotitolo usare i tag <h2> o <h3>.
+	  Non raggiungere la quota di 3-4 paragrafi per pagina
+
+	- Se all'interno dei contenuti, si vogliono mettere dei link, gli spider vedono di buon occhio tutti i link interni alle pagine.
+	  Per essere più chiari: se sta parlando di come cucinare le aragoste, e ad un certo punto punto si menziona qualcosa 
+	  sulla vita dell'aragosta, e buona norma linkare sulla frase indicante la vita dell'aragosta, la 
+	  pagina di riferimento al proprio sito dove si parlerà appunto della vita dell'aragosta.
+	  Il link non deve essere la solita scritta "clicca qui", ma sarebbe meglio per gli spider 
+	  leggere quaòcosa del tipo "clicca qui per leggere la vita dell'aragosta"
+	  
+	- Utilizzare il tag <strong> per enfatizzare le parole che si trovano sulle keywords, title, description e titoli della pagina
+	  di riferimento
+5. Crezione di un e-commerce
+	- La nuova versione, supporta il mod_rewrite anche per l'e-commerce. Crea l'URL totalmente in automatico.
+	- Scrivere il titolo degli articoli con più dettagli possibili, per entrare nei motori di ricerca.
+	- Puoi importare una lista in CSV seguendo la guida all'interno del sito
+	- Gli articoli vengono divisi in categorie con sottocategorie ricorsive
+
+
+
+Non ho parlato del tag <title>. Questo marcatore è forse quello che viene più indicizzato dagli spider, 
+in quanto facendo una piccola ricerca su google, si noterà facilmente che la scritta più grossa è proprio quella
+del title della pagina. Nel bilug il title viene recuperato automaticamente, recuperando il nome del sito, i titoli delle pagine, 
+o comunque dei riferimenti in base anche ai moduli che si utilizzano. La cosa importante è essere molto precisi quando si 
+scrivono i titoli per le pagine statiche e dinamiche, che sono probabilmente le più importanti
+
+
+
+
+
