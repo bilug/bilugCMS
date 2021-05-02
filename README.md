@@ -25,8 +25,9 @@ Nella terza versione si ha la gestione completa con i CSS dell'aspetto grafico, 
 
 Fondamentale per lo sviluppo è stato un altro corso di formazione da me tenuto come docente a CittàStudi, in cui ho insegnato agli allievi ad installare e configurare un server con Ubuntu e poi ho insegnato a programmare con strumenti opensource per sviluppare in php e mysql. E' da lì che nasce la collaborazione con Alessio Loro Piana, il più dotato degli studenti del mio corso.
 
-Intenti: creare un sito dinamico di facile utilizzo per tutti quanti per la diffusione della conoscenza (non solo in ambito informatico), in modo libero.»
-SVILUPPO
+Intenti: creare un sito dinamico di facile utilizzo per tutti quanti per la diffusione della conoscenza (non solo in ambito informatico), in modo libero.
+
+## **SVILUPPO**
 
 Proseguendo negli anni con i corsi a CittàStudi, mi è stato possibile portare avanti lo sviluppo del progetto, grazie all'aiuto dei miei allievi più dotati.
 
