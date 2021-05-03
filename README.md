@@ -65,24 +65,26 @@ Il BilugCMS nasce per coloro che vogliono essere padroni del loro sito e voglion
 ## **Come installare il BilugCMS** 
 Vediamo l'installazione sui sistemi operativi più famosi:
 	**Installazione su Windows**
-    1. Scaricare il BilugCMS 
-    2. Decompattare il file zip nel vostro web server (consiglio di utizzare XAMPP) 
-    3. Assicurarsi che Apache sia configurato in modo da interpretare il PHP anche nei files HTML 
-    4. Creare un database MySql con il nome che più preferite 
-    5. Ora il BilugCMS dovrebbe essere funzionante a tutti gli effetti, quindi andate al link http://localhost/NOME_SITO. Vi verranno chiesti i parametri del database che avete appena creato. Andate avanti e scegliete il template che più vi piace. Fatto questo, dovete settare i parametri principali del sito. Se avete tutto correttamente dovreste vedere il sito. 
-    6. Per poter entrare nell'area amministrativa per gestire il vostro sito, dovete puntare col vostro browser in http://localhost/NOME_SITO/bilugcms-admin e vi apparirà la pagina di login per l'area di amministrazione. Potete anche cliccare sul lucchetto in fondo a sinistra 
+ 1. Scaricare il BilugCMS 
+ 2. Decompattare il file zip nel vostro web server (consiglio di utizzare XAMPP) 
+ 3. Assicurarsi che Apache sia configurato in modo da interpretare il PHP anche nei files HTML 
+ 4. Creare un database MySql con il nome che più preferite 
+ 5. Ora il BilugCMS dovrebbe essere funzionante a tutti gli effetti, quindi andate al link http://localhost/NOME_SITO. Vi verranno chiesti i parametri del database che avete appena creato. Andate avanti e scegliete il template che più vi piace. Fatto questo, dovete settare i parametri principali del sito. Se avete tutto correttamente dovreste vedere il sito. 
+ 6. Per poter entrare nell'area amministrativa per gestire il vostro sito, dovete puntare col vostro browser in http://localhost/NOME_SITO/bilugcms-admin e vi apparirà la pagina di login per l'area di amministrazione. Potete anche cliccare sul lucchetto in fondo a sinistra 
  
 **Installazione su Linux**
-    1. Scaricare il BilugCMS 
-    2. Decompattare il file zip nel vostro web server (Consiglio l'instalazzione di un sistema LAMP) 
-    3. Assicurarsi che Apache sia configurato in modo da interpretare il PHP anche nei files HTML 
-    4. Creare un database MySql con il nome che più preferite 
-    5. Prima di fare qualsiasi cosa, dovete inserire i permessi totali (777) alle cartelle: html, gals, utility, phpmysqlautobackup, tutti i files nella root del sito. Se siete in locale, date pure i permessi totali a tutto il sito utilizzando il comando chmod 
-    6. Ora il BilugCMS dovrebbe essere funzionante a tutti gli effetti, quindi andate al link http://localhost/NOME_SITO. Vi verranno chiesti i parametri del database che avete appena creato. Andate avanti e scegliete il template che più vi piace. Fatto questo, dovete settare i parametri principali del sito. Se avete tutto correttamente dovreste vedere il sito. 
-    7. Per poter entrare nell'area amministrativa per gestire il vostro sito, dovete puntare col vostro browser in http://localhost/NOME_SITO/bilugcms-admin e vi apparirà la pagina di login per l'area di amministrazione. Potete anche cliccare sul lucchetto in fondo a sinistra. Ci sarà solo un utente all'inizio, con le seguenti credenziali: 
-        ◦ Utente: bilug 
-        ◦ Password: bilug 
-    8. Finito le varie procedure inserire i permessi 755 a tutto il progetto, per migliorare la sicurezza del vostro sito. 
+1. Scaricare il BilugCMS 
+2. Decompattare il file zip nel vostro web server (Consiglio l'instalazzione di un sistema LAMP) 
+3. Assicurarsi che Apache sia configurato in modo da interpretare il PHP anche nei files HTML 
+4. Creare un database MySql con il nome che più preferite 
+5. Prima di fare qualsiasi cosa, dovete inserire i permessi totali (777) alle cartelle: html, gals, utility, phpmysqlautobackup, tutti i files nella root del sito. Se siete in locale, date pure i permessi totali a tutto il sito utilizzando il comando chmod 
+6. Ora il BilugCMS dovrebbe essere funzionante a tutti gli effetti, quindi andate al link http://localhost/NOME_SITO. Vi verranno chiesti i parametri del database che avete appena creato. Andate avanti e scegliete il template che più vi piace. Fatto questo, dovete settare i parametri principali del sito. Se avete tutto correttamente dovreste vedere il sito. 
+7. Per poter entrare nell'area amministrativa per gestire il vostro sito, dovete puntare col vostro browser in http://localhost/NOME_SITO/bilugcms-admin e vi apparirà la pagina di login per l'area di amministrazione. Potete anche cliccare sul lucchetto in fondo a sinistra. Ci sarà solo un utente all'inizio, con le seguenti credenziali: 
+```
+◦ Utente: bilug 
+◦ Password: bilug
+``` 
+8. Finito le varie procedure inserire i permessi 755 a tutto il progetto, per migliorare la sicurezza del vostro sito. 
  
 *Attenzione
 E' importante, alla fine della configurazione del bilugcms, **cambiare i permessi in 755 e non lasciare i permessi totali a 777** che costituiscono un pericolo per la gestione del vostro sito.*
