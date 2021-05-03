@@ -70,9 +70,11 @@ Vediamo l'installazione sui sistemi operativi più famosi:
  3. Assicurarsi che Apache sia configurato in modo da interpretare il PHP anche nei files HTML 
  4. Creare un database MySql con il nome che più preferite 
  5. Ora il BilugCMS dovrebbe essere funzionante a tutti gli effetti, quindi andate al link http://localhost/NOME_SITO. Vi verranno chiesti i parametri del database che avete appena creato. Andate avanti e scegliete il template che più vi piace. Fatto questo, dovete settare i parametri principali del sito. Se avete tutto correttamente dovreste vedere il sito. 
- 6. Per poter entrare nell'area amministrativa per gestire il vostro sito, dovete puntare col vostro browser in http://localhost/NOME_SITO/bilugcms-admin e vi apparirà la pagina di login per l'area di amministrazione. Potete anche cliccare sul lucchetto in fondo a sinistra 
+ 6. Per poter entrare nell'area amministrativa per gestire il vostro sito, dovete puntare col vostro browser in http://localhost/NOME_SITO/bilugcms-admin e vi apparirà la pagina di login per l'area di amministrazione. Potete anche cliccare sul lucchetto in fondo a sinistra.
+
+
  
-**Installazione su Linux**
+	**Installazione su Linux**
 1. Scaricare il BilugCMS 
 2. Decompattare il file zip nel vostro web server (Consiglio l'instalazzione di un sistema LAMP) 
 3. Assicurarsi che Apache sia configurato in modo da interpretare il PHP anche nei files HTML 
